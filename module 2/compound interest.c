@@ -1,20 +1,20 @@
-#include <stdio.h>
 #include <math.h>
 
 int main()
 {
-    float principle, rate, time, CI;
+    float principal, rate, time, CI,Amount;
 
-    printf("Enter principle (amount): ");
-    scanf("%f", &principle);
+    printf("Enter principal:");
+    scanf("%f", &principal);
 
-    printf("Enter time: ");
+    printf("Enter time:");
     scanf("%f", &time);
 
-    printf("Enter rate: ");
+    printf("Enter rate:");
     scanf("%f", &rate);
 
-    CI = principle* (pow((1 + rate / 100), time));
+    Amount = principal* (pow((1 + rate / 100), time));
+     CI= Amount-principal;
 
     printf("Compound Interest = %f", CI);
 
